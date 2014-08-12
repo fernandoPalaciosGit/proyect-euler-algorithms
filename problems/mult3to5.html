@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>problems</title>
+</head>
+<body>
+	<header>
+		<h1>multiplos de 3 a 5</h1>
+	</header>
+	<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.<br/>
+	Find the sum of all the multiples of 3 or 5 below 1000.</p>
+	<p><strong>Solucion: <span class="sol"></span></strong></p>
+	<script>
+		var suma = 0;
+		for (var i = 0, len = 1000; i < len; i++) {
+		    if( i % 3 === 0 || i % 5 === 0){
+		    	suma += i;
+		    }
+		};
+		document.querySelector('.sol').innerText = suma;
+	</script>
+</body>
+</html>
